@@ -736,7 +736,7 @@ drawbar(Monitor *m)
 
 	if ((w = m->ww - tw - x) > bh) {
 		if (m->sel) {
-			drw_setscheme(drw, scheme[m == selmon ? SchemeSel : SchemeNorm]);
+			drw_setscheme(drw, scheme[SchemeNorm]);
 			unsigned int ttw,tts,pad,boxx;
 			if (centerbar){
 				ttw = TEXTW(m->sel->name);
